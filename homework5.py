@@ -21,10 +21,10 @@ class User:   #класс пользователя, содержащий атр�
 # Класс Video представляет видео на платформе.
 class Video:
     time_now = 0
-    def __init__(self, title, duration, adult_mode):
+    def __init__(self, title, duration, adult_mode = False):
         self.duration = duration
         self.title = title
-        self.adult_mode = False
+        self.adult_mode = adult_mode
 # Атриубуты: title(заголовок, строка), duration(продолжительность, секунды), time_now(секунда остановки (изначально 0)), adult_mode(ограничение по возрасту, bool (False по умолчанию))
 
 
